@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+//var Path = require('path');
 
 module.exports = {
 entry: [
@@ -21,6 +22,10 @@ output: {
 },
 resolve: {
   root: __dirname,
+  modulesDirectories: [
+    'node_modules',
+    './app/components'
+  ],
   alias: {
 
     applicationStyles: 'app/styles/app.scss'
