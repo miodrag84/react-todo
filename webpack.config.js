@@ -1,5 +1,5 @@
 var webpack = require('webpack');
-//var Path = require('path');
+var Path = require('path');
 
 module.exports = {
 entry: [
@@ -29,6 +29,10 @@ resolve: {
   alias: {
 
     applicationStyles: 'app/styles/app.scss'
+    // AddTodo: 'app/components/AddTodo.jsx',
+    // Todo: 'app/components/Todo.jsx',
+    // TodoApp: 'app/components/TodoApp.jsx',
+    // TodoList: 'app/components/TodoList.jsx'
 
 
   },
