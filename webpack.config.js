@@ -30,7 +30,8 @@ resolve: {
   alias: {
 
     applicationStyles: 'app/styles/app.scss',
-    actions: 'app/actions/actions.jsx'
+    actions: 'app/actions/actions.jsx',
+    reducers: 'app/reducers/reducers.jsx'
     // AddTodo: 'app/components/AddTodo.jsx',
     // Todo: 'app/components/Todo.jsx',
     // TodoApp: 'app/components/TodoApp.jsx',
