@@ -44,6 +44,8 @@ return state.map((todo) => {
       completed: nextCompleted,
       completedAt: nextCompleted ? moment().unix() : undefined
     };
+  } else {
+    return todo;
   }
 });
     default:
