@@ -6,7 +6,8 @@ var moment = require('moment');
 import TodoList from 'TodoList'
 import AddTodo from 'AddTodo';
 //var AddTodo =require('AddTodo');
-var TodoSearch = require('TodoSearch');
+//var TodoSearch = require('TodoSearch');
+import TodoSearch from 'TodoSearch';
 var TodoAPI = require('TodoAPI');
 
 var TodoApp = React.createClass({
@@ -34,16 +35,6 @@ this.setState({
   ]
 });
   },
-  // handleToggle: function (id) {
-  //   var updateTodos = this.state.todos.map((todo) => {
-  //     if(todo.id === id) {
-  //       todo.completed = !todo.completed;
-  //       todo.completedAt = todo.completed ? moment().unix() : undefined;
-  //     }
-  //     return todo;
-  //   });
-  //   this.setState({todos: updateTodos});
-  // },
   handleSearch: function (showCompleted, searchText) {
     this.setState({
       showCompleted: showCompleted,
