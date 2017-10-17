@@ -1,11 +1,11 @@
 var redux = require('redux');
-var {searchTextReducer, showCompletedReducer, todoReducer} = require('reducers');
+var {searchTextReducer, showCompletedReducer, todosReducer} = require('reducers');
 
 export var configure = (initialState = {}) => {
   var reducer = redux.combineReducers({
     searchText: searchTextReducer,
     showCompleted: showCompletedReducer,
-    todos: todoReducer
+    todos: todosReducer
   });
 
   var store = redux.createStore(reducer, initialState, redux.compose(
